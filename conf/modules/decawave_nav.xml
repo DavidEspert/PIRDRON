@@ -1,0 +1,23 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="decawave_nav" dir="ctrl">
+  <doc>
+    <description>
+      Control a fixed-wing to use both GPS and Decawave modules to land it in a net
+
+      Data are coming from POSITION_ESTIMATE ABI message
+    </description>
+    <section name="DECAWAVE_NAV" prefix="DECAWAVE_NAV_">
+      <define name="ID" value="ABI_BROADCAST" description="ABI binding ID"/>
+    </section>
+  </doc>
+
+  <header>
+    <file name="decawave_nav.h"/>
+  </header>
+  <init fun="decawave_nav_init()"/>
+  <makefile>
+    <file name="decawave_nav.c"/>
+  </makefile>
+</module>
+

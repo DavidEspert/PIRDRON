@@ -1,0 +1,12 @@
+<!DOCTYPE settings SYSTEM "settings.dtd">
+
+<settings>
+  <dl_settings>
+    <dl_settings NAME="Decawave nav">
+      <dl_setting MAX="5." MIN="0" STEP="0.05" VAR="kp" module="modules/ctrl/decawave_nav"/>
+      <dl_setting MAX="5." MIN="0" STEP="0.05" VAR="ki" module="modules/ctrl/decawave_nav"/>
+      <dl_setting MAX="5." MIN="0" STEP="0.05" VAR="kd" module="modules/ctrl/decawave_nav"/>
+      <dl_setting MAX="10" MIN="-10" STEP="0.01" VAR="nav_shift" module="firmwares/fixedwing/nav" handler="IncreaseShift" shortname="inc. shift"/>
+    </dl_settings>
+  </dl_settings>
+</settings>
